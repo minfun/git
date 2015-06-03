@@ -1,0 +1,22 @@
+﻿
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+<address>
+    Minfun<br />
+    <p>The local date and time is {{ moment(current_time).format('LLL') }}.</p>
+    <p>That was {{ moment(current_time).fromNow(refresh=True) }}</p>
+</address>
+
+<address>
+    <strong>ContactMe:</strong>   <a href="mailto:491548526@qq.com">491548526@qq.com</a><br />
+    <strong>MailToM:</strong> <a href="mailto:nowican@live.com">nowican@live.com</a><br />
+</address>
+
+{% endblock %}
+
+
